@@ -1,0 +1,54 @@
+.banner{
+    background-image: url("../../assets/books.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 72vh;
+    align-items: center;
+    display: flex;
+    h2{
+        color: white;
+        display: flex;
+        margin-left: 130px;
+        width: 27vw;
+        font-size: 40px;
+    }
+}
+
+
+
+.devoDoar{
+    height: 80vh;
+       div{
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        h2{
+            font-size: 30px;
+            color: rgba(0, 86, 149, 1);
+            margin-left: 65px;
+        }
+    }
+}
+
+.boxCard{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    article{
+        width: 20%;
+        height: 80%;
+        background-color: rgba(1, 87, 148, 0.3);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 20px;
+        p{
+            width: 70%;
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+
+}
