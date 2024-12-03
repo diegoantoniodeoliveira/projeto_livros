@@ -18,21 +18,17 @@ export default function header (){
                 <img src={logo} alt="logo" /> 
                 <h1>Livro Vai na Web</h1>
             </section>
-
             <nav className={S.boxMenu}>
                 <ul>
                     <li><Link to="/">Inicio</Link></li>
                     <li><Link to="/doados">Livros Doados</Link></li>
                     <li><Link to="queroDoar">Quero doar</Link></li>
                 </ul>
-
             </nav>
-                <div className={S.boxInput}>
-                    <input type="text"  placeholder="o que você procura" />
-                    <img src={busca} alt=" " />
-                </div>
-            
-
+            <div className={S.boxSearch}>
+                <input className={S.boxInput} type="text"  placeholder="o que você procura" />
+                <img src={busca} alt=" " />
+            </div>
         </header>
 
         

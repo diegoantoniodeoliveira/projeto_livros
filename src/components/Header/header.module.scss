@@ -13,6 +13,10 @@ header{
     color: white;
     align-items: center;
     justify-content: space-evenly;
+    h1{
+        font-size: 25px;
+        font: bold;
+    }
 }
 
 .boxMenu{
@@ -28,7 +32,7 @@ header{
     }
 }
 
-.boxInput{
+.boxSearch{
     border: solid 2px white;
     width: 17vw;
     height: 6vh;
@@ -49,3 +53,68 @@ header{
     }
 }
 
+@media(max-width: 1168px){
+    .boxlogo{
+        border: solid 2px red;
+        h1{
+            font-size: 2vw;
+        }
+        img{
+            width: 5vw;
+        }
+    }
+    .boxMenu{
+        border: solid  2px green;
+        ul{
+            font-size: 1.6vw;
+        }
+    }
+
+    .boxSearch{
+        width: 20vw;
+    }
+    .boxInput{
+        width: 15vw;
+        &::placeholder{
+            font-size: 1.3vw;
+        }
+
+    }
+}
+
+@media(max-width: 760px){
+    
+    header{
+        height: 25vh;
+        flex-direction: column;
+    }
+
+    .boxSearch{
+        display: none;
+    }
+
+    .boxlogo{
+        width: 100%;
+        h1{
+            font-size: 28px;
+        }
+        img{
+            width: 50px;
+        }
+    }
+
+    .boxMenu{
+        width: 100%;
+        ul{
+            font-size: 22px;
+            justify-content: space-around;
+        }
+    }
+}
+
+
+@media(max-width: 380px){
+    .boxMenu{
+        font-size: 18px;
+    }
+}
