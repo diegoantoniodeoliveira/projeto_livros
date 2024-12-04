@@ -68,7 +68,6 @@
     .banner{
         background-image: url(../../assets/banner_menor.png);
         h2{
-            border: solid 2px red;
             width: 70%;
             text-align: center;
             font-size: 28px;
@@ -77,10 +76,8 @@
     }
     
     .devoDoar{
-        border: solid 2px green;
         height: 120vh;
             div{
-                border: solid 2px red;
                 justify-items: center;
                 h2{
                     margin-left: 0;
@@ -89,7 +86,6 @@
     }
 
     .boxCard{
-        border: solid 2px yellow;
         height: 100vh;
         flex-wrap: wrap;
         article{

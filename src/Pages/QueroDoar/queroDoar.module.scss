@@ -2,7 +2,6 @@
     height: 80vh;
     display: flex;
     justify-content: center;
-
 }
 
 .container{
@@ -10,7 +9,9 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-
+    h2{
+        text-align: center;
+    }
 }
 
 form{
@@ -43,7 +44,7 @@ form{
 }
 
 input:nth-child(6){
-    width: 10vw;
+    width: 40%;
     height: 6vh;
     padding-left: 0;
     background: rgba(0, 86, 149, 1);
@@ -52,4 +53,38 @@ input:nth-child(6){
     font-size: 18px;
     
     
+}
+
+@media (max-width: 1070px) {
+    form{
+        width: 350px;
+    }
+    
+}
+
+@media (max-width: 650px) {
+    .container{
+        height: 90vh;
+        h2{
+            font-size: 20px;
+        }
+    }
+    
+    .principal{
+        height: auto;
+    }
+}
+
+@media (max-width: 450px) {
+   form{
+    width: 75vw;
+    div{
+        img{
+            width: 13vw;
+        }
+        h3{
+            font-size: 4.5vw;
+        }
+    }
+   }
 }

@@ -3,15 +3,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .boxCard{
     width: 85vw;
     height: 60vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
     article{
         border: solid 2px #005695;
-        width: 13vw;
+        width: 170px;
         height: 32vh;
         display: flex;
         flex-direction: column;
@@ -21,9 +25,36 @@
             img{
                 padding-bottom: 20px;
             }
-      
-
     }
-    
-
 }
+
+
+@media (max-width: 900px) {
+    .boxCard{
+        height: 80vh;
+    }
+
+    .boxDoados{
+        height: 90vh;
+    }
+}
+
+// @media (max-width: 1100px) {
+//     .boxCard{
+//         article{
+//             width: 16vw;
+//             h3{
+//                 font-size: 17px;
+//             }
+//             p{
+//                 font-size: 14px;
+//             }
+//         }
+//     }
+// }
+
+// @media (max-width: 860px) {
+//     .boxCard{
+      
+//     }
+// }
