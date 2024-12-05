@@ -6,15 +6,12 @@ import Doados from "../../Pages/Doados/Doados"
 import QueroDoar from "../../Pages/QueroDoar/QueroDoar"
 import S from "./header.module.scss"
 
-
-
 export default function header (){
 
     return(
     <BrowserRouter>
-
         <header>
-            <section className={S.boxlogo}>
+            <section className={S.boxLogo}>
                 <img src={logo} alt="logo" /> 
                 <h1>Livro Vai na Web</h1>
             </section>
@@ -30,15 +27,11 @@ export default function header (){
                 <img src={busca} alt=" " />
             </div>
         </header>
-
-        
-    <Routes>
-        <Route path="/" element={<Inicio />} />
-        <Route path="/doados" element={<Doados />} />
-        <Route path="/queroDoar" element={<QueroDoar />} />
+        <Routes>
+            <Route path="/" element={<Inicio />} />
+            <Route path="/doados" element={<Doados />} />
+            <Route path="/queroDoar" element={<QueroDoar />} />
     </Routes>
     </BrowserRouter>
     )
-
-
 }

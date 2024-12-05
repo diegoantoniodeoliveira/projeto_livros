@@ -18,12 +18,7 @@ export default function Doados(){
                     <p>Susanne Andrade</p>
                     <p>Ficção</p>
                 </article>
-
-
             </section>
         </section>
-
     )
-
-
 }

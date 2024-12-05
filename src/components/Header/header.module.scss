@@ -6,9 +6,9 @@ header{
     background: linear-gradient(90deg, rgba(0,27,47,1) 0%, rgba(0,86,149,1) 88%);  
 }
 
-.boxlogo{
+.boxLogo{
     width: 23vw;
-    height: 14h;
+    height: 15h;
     display: flex;
     color: white;
     align-items: center;
@@ -27,36 +27,39 @@ header{
         justify-content: space-between;
         a{
             color: white;
-            font-size: 20px;
         }
     }
 }
 
 .boxSearch{
-    border: solid 2px white;
+    border: solid 2px white ;
     width: 17vw;
     height: 6vh;
-    margin-right: 20px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     border-radius: 15px;
-    input{
-        background-color: transparent;
-        outline: none;
-        border: none;
+    padding-right: 20px;
+    margin-right: 20px;
+}
+
+.boxInput{
+    border: none;  
+    outline: none;
+    width: 13vw;
+    background-color: transparent;
+    padding-left: 18px;
+    color: white;
+    font-size: 17px;
+    &::placeholder{
         color: white;
-        font-size: 15px;
-        &::placeholder{
-            color: white;
-        }
     }
 }
 
-@media(max-width: 1168px){
+@media(max-width: 1170px){
     .boxlogo{
         h1{
-            font-size: 2vw;
+            font-size: 1.7vw;
         }
         img{
             width: 5vw;
@@ -72,11 +75,10 @@ header{
         width: 20vw;
     }
     .boxInput{
-        width: 15vw;
+        width: 16vw;
         &::placeholder{
             font-size: 1.3vw;
         }
-
     }
 }
 
@@ -85,6 +87,7 @@ header{
     header{
         height: 25vh;
         flex-direction: column;
+        justify-content: space-around;
     }
 
     .boxSearch{
@@ -93,6 +96,7 @@ header{
 
     .boxlogo{
         width: 100%;
+        justify-content: space-evenly;
         h1{
             font-size: 28px;
         }

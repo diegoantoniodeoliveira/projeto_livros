@@ -32,7 +32,7 @@ form{
     }
     input{
         border: solid 2px rgba(0,86,149,1);
-        width: 22vh;
+        width: 80%vh;
         height: 5vh;
         border-radius: 10px;
         outline: none;
@@ -51,15 +51,12 @@ input:nth-child(6){
     color: white;
     cursor: pointer;
     font-size: 18px;
-    
-    
 }
 
 @media (max-width: 1070px) {
     form{
         width: 350px;
     }
-    
 }
 
 @media (max-width: 650px) {
@@ -76,15 +73,15 @@ input:nth-child(6){
 }
 
 @media (max-width: 450px) {
-   form{
-    width: 75vw;
-    div{
-        img{
-            width: 13vw;
+    form{
+        width: 75vw;
+        div{
+            img{
+                width: 13vw;
+            }
+            h3{
+                font-size: 4.5vw;
+            }
         }
-        h3{
-            font-size: 4.5vw;
-        }
-    }
    }
 }

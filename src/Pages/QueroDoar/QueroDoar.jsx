@@ -8,7 +8,7 @@ export default function QueroDoar(){
                 <h2> Por favor, preencha o formulário com suas informações e as informações do Livro </h2>
                 <form action="">
                     <div>
-                        <img src={livro} alt="" />
+                        <img src={livro} alt="icone livro" />
                         <h3>Informaçãos do Livro</h3>
                     </div>
                     <input type="text" placeholder="Titulo"/>
@@ -19,6 +19,5 @@ export default function QueroDoar(){
                 </form>
             </section>
         </section>
-
     )
 }
