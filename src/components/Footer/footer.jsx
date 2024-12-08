@@ -12,11 +12,11 @@ export default function footer (){
            <section className={S.boxSocial}>
             <h3>4002-8922</h3>
                 <nav>
-                    <a href=""> <img src={re_fb} alt="" /></a>
-                    <a href=""> <img src={re_ins} alt="" /></a>
-                    <a href=""> <img src={re_ld} alt="" /></a>
-                    <a href=""> <img src={re_tw} alt="" /></a>
-                    <a href=""> <img src={re_yt} alt="" /></a>
+                    <a href=""> <img src={re_fb} alt="icone logo facebook" /></a>
+                    <a href=""> <img src={re_ins} alt="icone logo instagram" /></a>
+                    <a href=""> <img src={re_ld} alt="icone logo linkedin" /></a>
+                    <a href=""> <img src={re_tw} alt="icone logo twitter" /></a>
+                    <a href=""> <img src={re_yt} alt="icone logo youtube" /></a>
                 </nav>
             </section>
             <section className={S.boxTexto}>

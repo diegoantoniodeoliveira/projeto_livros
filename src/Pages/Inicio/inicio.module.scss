@@ -1,7 +1,7 @@
 .banner{
     background-image: url("../../assets/books.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     height: 88vh;
     align-items: center;
     display: flex;
@@ -62,7 +62,7 @@
 
 @media (max-width: 760px) {
     .banner{
-        background-image: url(../../assets/banner_menor.png);
+        background-image: url("../../assets/banner_menor.png");
         justify-content: center;
         h2{
             width: 70%;
@@ -71,7 +71,7 @@
             margin-left: 0;
         }
     }
-    
+
     .devoDoar{
         height: 120vh;
             div{
