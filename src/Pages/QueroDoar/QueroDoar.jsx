@@ -13,7 +13,7 @@ export default function QueroDoar(){
 
     const enviarDados = async()=>{
 
-        const urlApi = "https://desafio-back-h7bi.onrender.com"
+        const urlApi = "https://desafio-back-h7bi.onrender.com/doar"
 
         const dadosEnviar = {
             titulo,
@@ -22,9 +22,10 @@ export default function QueroDoar(){
             imagem_url
         }
 
-        const envioApi = await axios.post(urlApi,dadosEnviar)
+        await axios.post(urlApi, dadosEnviar)
 
-        alert('Livro enviado')
+        alert("Livro cadastrado!!")
+
 
         setTitulo("")
         setCategoria("")
@@ -32,10 +33,6 @@ export default function QueroDoar(){
         setImagem_url("")
 
     }
-
-
-
-
 
     const capturaTitulo = (e) =>{
         setTitulo(e.target.value)
@@ -54,22 +51,21 @@ export default function QueroDoar(){
     }
 
 
-
-
     return(
-        <section className={S.principal}>
-            <section className={S.container}>
-                <h2> Por favor, preencha o formulário com suas informações e as informações do Livro </h2>
-                <form onSubmit={(e)=> e.preventDefault()} >
+        <section className={S.principal}> {/* Contêiner principal estilizado */}
+            <section className={S.container}> {/* Contêiner interno */}
+                <h2>Por favor, preencha o formulário com suas informações e as informações do Livro</h2>
+                <form onSubmit={(e)=> e.preventDefault()}> {/* Previne o comportamento padrão do formulário */}
                     <div>
-                        <img src={livro} alt="icone livro" />
-                        <h3>Informaçãos do Livro</h3>
+                        <img src={livro} alt="" /> {/* Exibe a imagem do livro */}
+                        <h3>Informações do Livro</h3>
                     </div>
-                    <input type="text" placeholder="Titulo" onChange={capturaTitulo} value={titulo}/>
-                    <input type="text" placeholder="Categoria" onChange={capturaCategoria} value={categoria}/>
-                    <input type="text" placeholder="Autor" onChange={capturaAutor} value={autor}/>
-                    <input type="text" placeholder="Link da imagem" onChange={capturaImagem} value={imagem_url}/>
-                    <input type="submit" value="DOAR"  onClick={enviarDados} />
+                    {/* Campos do formulário */}
+                    <input type="text" placeholder='Titulo' onChange={capturaTitulo} value={titulo} />
+                    <input type="text" placeholder='Categoria' onChange={capturaCategoria} value={categoria} />
+                    <input type="text" placeholder='Autor' onChange={capturaAutor} value={autor}/>
+                    <input type="text" placeholder='Link da Imagem' onChange={capturaImagem} value={imagem_url} />
+                    <input className={S.doar} type="submit" value="Doar" onClick={enviarDados} /> {/* Botão de submissão */}
                 </form>
             </section>
         </section>
